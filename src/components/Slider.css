@@ -1,0 +1,91 @@
+/* Style du conteneur du slider */
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Réduire la hauteur du slider */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px; /* Ajouter un peu d'espace sous le slider */
+  }
+  
+  /* Style des slides (images) */
+  .slide {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease-in-out; /* Transition fluide entre les images */
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .slide.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Boutons "Précédent" et "Suivant" */
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Fond sombre semi-transparent */
+    color: white;
+    border: none;
+    font-size: 36px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Changer de couleur au survol */
+  }
+  
+  .prev {
+    left: 20px;
+  }
+  
+  .next {
+    right: 20px;
+  }
+  
+  /* Dots de navigation */
+  .dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  
+  .dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 8px;
+    background-color: rgba(255, 255, 255, 0.5); /* Couleur blanche semi-transparente */
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Couleur au survol */
+  }
+  
+  .dot.active {
+    background-color: #fff; /* Couleur active du point */
+  }
+  

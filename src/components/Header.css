@@ -1,0 +1,172 @@
+.footer {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  padding: 40px 0 20px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  border-top: 1px solid #444;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Styles spécifiques pour la section S'informer */
+.footer-inform-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.footer-inform-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-inform-item {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  position: relative;
+  cursor: pointer;
+  color: #dddddd;
+}
+
+.footer-inform-item::before {
+  content: "-";
+  position: absolute;
+  left: -10px;
+}
+
+.footer-inform-item:hover {
+  color: #f5f6f7;
+}
+
+/* Styles pour la section Nous contacter (inchangés) */
+.footer-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-subtitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #dddddd;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #dddddd;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #fefefe;
+}
+
+.link-icon {
+  font-size: 14px;
+  min-width: 20px;
+}
+
+.footer-icon {
+  font-size: 16px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  font-size: 14px;
+  color: #aaaaaa;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* Ligne blanche de séparation */
+.footer-divider {
+  border: none;
+  border-top: 1px solid white; /* Ligne blanche */
+  margin: 20px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .footer-inform-title,
+  .footer-title {
+      font-size: 16px;
+      margin-bottom: 12px;
+      text-align: center;
+  }
+
+  .footer-inform-item,
+  .contact-info li {
+      font-size: 13px;
+      justify-content: center;
+      margin-bottom: 8px;
+  }
+
+  .footer-bottom {
+      font-size: 13px;
+      margin-top: 25px;
+  }
+}
+/* Bande noire pour Wishlist */
+.header-wishlist {
+  background-color: #000;
+  color: #fff;
+  padding: 8px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.header-wishlist .heart-icon {
+  margin-left: 8px;
+  color: #ff4081;
+  font-size: 16px;
+}
